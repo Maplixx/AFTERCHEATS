@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFTER CHEATS IOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            --primary-color: #ffffff;
+            --text-secondary: #aaaaaa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0f0f0f;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            color: var(--primary-color);
+        }
+
+        .rgb-wrapper {
+            position: relative;
+            padding: 4px;
+            border-radius: 24px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rgb-wrapper::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: conic-gradient(
+                #ff0000, #ff7f00, #ffff00, #00ff00, 
+                #0000ff, #4b0082, #8f00ff, #ff0000
+            );
+            animation: rotate 4s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .container {
+            position: relative;
+            background: rgba(18, 18, 18, 0.95);
+            width: 100%;
+            max-width: 800px;
+            border-radius: 20px;
+            z-index: 1;
+            padding: 40px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .ad-container {
+            width: 100%;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            border: 1px dashed var(--glass-border);
+        }
+
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 25px;
+            transition: transform 0.3s ease, background 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .step-title {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .step-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .download-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 12px 0;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .download-btn:hover {
+            background: white;
+            color: black;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="rgb-wrapper">
+        <div class="container">
+            <div class="header">
+                <h1>AFTER CHEATS IOS</h1>
+                <p>Desenvolvido pela Equipe After</p>
+            </div>
+
+            <div class="ad-container" id="ad-top">
+                SPACE FOR ADS
+            </div>
+
+            <div class="grid-container">
+                <div class="card">
+                    <div>
+                        <div class="step-title">PRIMEIRO PASSO</div>
+                        <div class="step-name">DNS</div>
+                    </div>
+                    <a href="#" class="download-btn" id="btn-dns">DOWNLOAD</a>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="step-title">SEGUNDO PASSO</div>
+                        <div class="step-name">CERTIFICADO</div>
+                    </div>
+                    <a href="#" class="download-btn" id="btn-cert">DOWNLOAD</a>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="step-title">TERCEIRO PASSO</div>
+                        <div class="step-name">DOWNLOAD ESIGN</div>
+                    </div>
+                    <a href="#" class="download-btn" id="btn-esign">DOWNLOAD</a>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="step-title">ÚLTIMO PASSO</div>
+                        <div class="step-name">IPA DO FF</div>
+                    </div>
+                    <a href="#" class="download-btn" id="btn-ipa">DOWNLOAD</a>
+                </div>
+            </div>
+
+             <div class="ad-container" id="ad-bottom">
+                SPACE FOR ADS
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- ÁREA DE CONFIGURAÇÃO DOS LINKS ---
+        var linkDns = "https://exemplo.com/dns";
+        var linkCertificado = "https://exemplo.com/certificado";
+        var linkEsign = "https://exemplo.com/esign";
+        var linkIpaFF = "https://exemplo.com/ipa-ff";
+        // --------------------------------------
+
+        document.getElementById('btn-dns').href = linkDns;
+        document.getElementById('btn-cert').href = linkCertificado;
+        document.getElementById('btn-esign').href = linkEsign;
+        document.getElementById('btn-ipa').href = linkIpaFF;
+    </script>
+</body>
+</html>
