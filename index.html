@@ -101,7 +101,7 @@
 
         .ad-container {
             width: 100%;
-            height: 110px; /* Aumentei levemente para caber o banner de 90px com folga */
+            min-height: 100px; 
             background: rgba(255, 255, 255, 0.02);
             border-radius: 12px;
             margin: 20px 0;
@@ -110,6 +110,15 @@
             align-items: center;
             overflow: hidden;
             border: 1px dashed var(--glass-border);
+        }
+
+        .ad-pc { display: block; }
+        .ad-mobile { display: none; }
+
+        @media (max-width: 768px) {
+            .ad-pc { display: none; }
+            .ad-mobile { display: block; }
+            .ad-container { min-height: 60px; }
         }
 
         .card {
@@ -184,16 +193,31 @@
             </div>
 
             <div class="ad-container" id="ad-top">
-                <script type="text/javascript">
-                    atOptions = {
-                        'key' : '5ef54cca0eb4b94b42c8b05f99bbe324',
-                        'format' : 'iframe',
-                        'height' : 90,
-                        'width' : 728,
-                        'params' : {}
-                    };
-                </script>
-                <script type="text/javascript" src="https://www.highperformanceformat.com/5ef54cca0eb4b94b42c8b05f99bbe324/invoke.js"></script>
+                <div class="ad-pc">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '5ef54cca0eb4b94b42c8b05f99bbe324',
+                            'format' : 'iframe',
+                            'height' : 90,
+                            'width' : 728,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="https://www.highperformanceformat.com/5ef54cca0eb4b94b42c8b05f99bbe324/invoke.js"></script>
+                </div>
+
+                <div class="ad-mobile">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '55bc2d8a9ef0cd05a466949d6c6fbf93',
+                            'format' : 'iframe',
+                            'height' : 50,
+                            'width' : 320,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="https://www.highperformanceformat.com/55bc2d8a9ef0cd05a466949d6c6fbf93/invoke.js"></script>
+                </div>
             </div>
 
             <div class="grid-container">
@@ -231,28 +255,41 @@
             </div>
 
              <div class="ad-container" id="ad-bottom">
-                <script type="text/javascript">
-                    atOptions = {
-                        'key' : '5ef54cca0eb4b94b42c8b05f99bbe324',
-                        'format' : 'iframe',
-                        'height' : 90,
-                        'width' : 728,
-                        'params' : {}
-                    };
-                </script>
-                <script type="text/javascript" src="https://www.highperformanceformat.com/5ef54cca0eb4b94b42c8b05f99bbe324/invoke.js"></script>
+                <div class="ad-pc">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '5ef54cca0eb4b94b42c8b05f99bbe324',
+                            'format' : 'iframe',
+                            'height' : 90,
+                            'width' : 728,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="https://www.highperformanceformat.com/5ef54cca0eb4b94b42c8b05f99bbe324/invoke.js"></script>
+                </div>
+
+                <div class="ad-mobile">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '55bc2d8a9ef0cd05a466949d6c6fbf93',
+                            'format' : 'iframe',
+                            'height' : 50,
+                            'width' : 320,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="https://www.highperformanceformat.com/55bc2d8a9ef0cd05a466949d6c6fbf93/invoke.js"></script>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        // --- ÁREA DE CONFIGURAÇÃO DOS LINKS ---
         var linkDns = "https://github.com/Nyasami/getUDID-JS/releases/download/1.0.0/signed_khoindvn_fullchain.mobileconfig";
         var linkCertificado = "https://khoindvn.io.vn/document/DNS/ESignCert.zip";
         var linkEsign = "https://api.khoindvn.eu.org/KXcveB";
         var linkIpaFF = "https://download1500.mediafire.com/1drdwug9iukgrcm3uXLa4hlwscM6kRTr4LSqgx1c4592ZWQlHPRcRpj0ADjnIx28wB4oqLLt5HF799gUCe3F6w3aO-jzfIYEOxzJggOreUPMsS2ByLnym1wRl4o0kTZdWPm6-WSwsllOexicKwQIeUJ6yiDLK0v_P5wmZq7Y5dRl0A/cgb7aasavuelfnk/AFTER+CHEATS+IOS.ipa";
-        // --------------------------------------
-
+        
         document.getElementById('btn-dns').href = linkDns;
         document.getElementById('btn-cert').href = linkCertificado;
         document.getElementById('btn-esign').href = linkEsign;
